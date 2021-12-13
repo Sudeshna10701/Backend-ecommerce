@@ -4,9 +4,8 @@
   "description": "API server for ecommerce",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -w src --exec \"babel-node src \"",
+    "dev": "nodemon -w src --exec \"./node_modules/.bin/babel-node src/index.js src \"",
     "build": "babel src --out-dir dist",
-    "serve": "node dist/index.js",
     "start": "npm run build && nodemon dist/index.js"
   },
   "author": "Sudeshna Dutta",
@@ -16,6 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-validator": "^6.13.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.14"
   },
