@@ -3,7 +3,7 @@ name: Deploy Server
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - "src/*"
       - ".github/workflows/DeployServer.yml"
@@ -15,7 +15,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: test workflow
         run: echo "YAY this workflow is running"
-      - name: Add github username
-        run: git config --global user.name 'Sudeshna10701'
-      - name: Add github email
-        run: git config --global user.email 'sudeshna10dutta@gmail.com'
+     
