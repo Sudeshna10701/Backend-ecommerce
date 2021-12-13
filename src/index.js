@@ -23,7 +23,7 @@ app.use("/api/v1/product", productRoutes)
 
 console.log('hello')
 app.get('/', (req, res) => {
-    res.send(`Server running at ${port}  `)
+    res.send(`Server running at ${port} (Deployed from workflow)`)
 })
 
 
